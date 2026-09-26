@@ -39,3 +39,14 @@
 .credentials h2{font-size:clamp(23px,2.1vw,29px);line-height:1.25;letter-spacing:-.4px;margin-bottom:12px}
 .credentials p{text-align:left;border:0;font-size:15px;line-height:1.6;max-width:285px;padding:0}
 @media(max-width:760px){.credentials .wrap{grid-template-columns:1fr;padding:12px 0}.credentials article,.credentials article:first-child,.credentials article:last-child{padding:24px 0;border:0}.credentials article+article{border-top:1px solid var(--line)}.credentials h2{font-size:27px;margin-bottom:8px}.credential-label{margin-bottom:9px}.credentials p{padding:0;border:0;max-width:none}.hero .button{min-width:0}.button{padding:16px 26px}}
+
+/* Diferenciais alinhados à mesma grade dos serviços. */
+.credentials{padding:32px 0 0}
+.credentials .wrap{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:0;border:0}
+.credentials article,.credentials article:first-child,.credentials article:last-child{padding:22px 25px;border:1px solid var(--line);border-top:2px solid var(--blue);border-radius:8px;background:#edf1f7}
+.credential-label{font-size:9px;letter-spacing:1.6px;margin-bottom:10px}
+.credentials h2{font-family:'Karla',sans-serif;font-size:19px;font-weight:600;letter-spacing:-.3px;line-height:1.35;margin-bottom:5px}
+.credentials p{font-size:13px;line-height:1.5;max-width:none}
+#atuacao{padding-top:60px}
+@media(max-width:1050px){.credentials .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.credentials{padding-top:24px}.credentials .wrap{grid-template-columns:1fr;gap:10px}.credentials article,.credentials article:first-child,.credentials article:last-child{padding:18px 24px}.credentials h2{font-size:20px}.credentials p{font-size:14px}.credential-label{margin-bottom:6px}#atuacao{padding-top:42px}}
