@@ -25,3 +25,17 @@
 }
 @keyframes hero-entry{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero-grid>div{animation:none}}
+
+/* Botões sem ícones e apresentação editorial dos diferenciais. */
+.button{gap:0;min-height:56px;padding:17px 30px;border:1px solid #b3c5e5;border-radius:4px;background:linear-gradient(135deg,#a7bce2,#8ca5d7);color:#202e46;font-size:16px;font-weight:600;letter-spacing:.3px;box-shadow:inset 0 1px 0 #ffffff35,0 4px 12px #121c2c12}
+.button:hover{background:linear-gradient(135deg,#b7c9e8,#9bb3df)}
+.hero .button{min-width:240px}
+.credentials{background:var(--paper);border:0}
+.credentials .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:46px 0;border-bottom:1px solid var(--line)}
+.credentials article{padding:0 36px;border-left:1px solid var(--line)}
+.credentials article:first-child{padding-left:0;border-left:0}
+.credentials article:last-child{padding-right:0}
+.credential-label{display:block;font-size:10px;font-weight:700;letter-spacing:2px;color:#60769b;margin-bottom:12px}
+.credentials h2{font-size:clamp(23px,2.1vw,29px);line-height:1.25;letter-spacing:-.4px;margin-bottom:12px}
+.credentials p{text-align:left;border:0;font-size:15px;line-height:1.6;max-width:285px;padding:0}
+@media(max-width:760px){.credentials .wrap{grid-template-columns:1fr;padding:12px 0}.credentials article,.credentials article:first-child,.credentials article:last-child{padding:24px 0;border:0}.credentials article+article{border-top:1px solid var(--line)}.credentials h2{font-size:27px;margin-bottom:8px}.credential-label{margin-bottom:9px}.credentials p{padding:0;border:0;max-width:none}.hero .button{min-width:0}.button{padding:16px 26px}}
