@@ -48,3 +48,7 @@ header nav{font-size:14px;gap:23px}
 header nav a{padding:10px 0}
 html{scroll-padding-top:94px}
 @media(max-width:760px){header .navigation{height:68px}header .wordmark img{width:138px}header nav{top:68px;font-size:15px;gap:8px}header .menu-toggle{width:42px;height:42px;padding:0;font-size:20px}html{scroll-padding-top:84px}}
+
+/* Mesma escala da marca no cabeçalho e no rodapé. */
+.footer-top .wordmark img{width:166px}
+@media(max-width:760px){.footer-top .wordmark img{width:138px}}
