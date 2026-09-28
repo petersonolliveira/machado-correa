@@ -80,3 +80,34 @@ html{scroll-padding-top:94px}
 #escritorio .team .registration{margin:12px 0 18px}
 #escritorio .person-bio{font-size:16px;line-height:1.65}
 }
+
+/* Ajuste de escala e alinhamento da composição editorial. */
+#escritorio{padding:64px 0}
+#escritorio .about-heading{max-width:740px}
+#escritorio .about-heading h2{font-size:36px;line-height:1.2}
+#escritorio .about-heading>p:last-child{font-size:16px;line-height:1.65;margin-top:18px}
+#escritorio .team{max-width:960px;margin-top:36px}
+#escritorio .team .person-card{grid-template-columns:260px minmax(0,1fr);column-gap:44px}
+#escritorio .team .person-card+.person-card{grid-template-columns:minmax(0,1fr) 260px;margin-top:28px;padding-top:28px}
+#escritorio .person-photo{width:260px;aspect-ratio:4/5}
+#escritorio .team h3{font-size:30px;margin:0;line-height:1.2}
+#escritorio .team .registration{font-size:13px;margin:10px 0 18px}
+#escritorio .person-bio{font-size:16px;line-height:1.65}
+#escritorio .team .person-bio p{margin-bottom:12px}
+#escritorio .person-content .text-link{font-size:15px;margin-top:4px}
+#escritorio .person-card:nth-child(even) .person-content{text-align:right}
+@media(max-width:900px) and (min-width:761px){
+#escritorio .team .person-card{grid-template-columns:220px minmax(0,1fr);column-gap:30px}
+#escritorio .team .person-card+.person-card{grid-template-columns:minmax(0,1fr) 220px}
+#escritorio .person-photo{width:220px}
+#escritorio .team h3{font-size:27px}
+}
+@media(max-width:760px){
+#escritorio{padding:46px 0}
+#escritorio .about-heading h2{font-size:32px}
+#escritorio .team{margin-top:28px}
+#escritorio .team .person-card,#escritorio .team .person-card+.person-card{grid-template-columns:minmax(0,1fr);gap:20px}
+#escritorio .person-photo,#escritorio .person-card:nth-child(even) .person-photo{width:min(100%,230px)}
+#escritorio .person-card:nth-child(even) .person-content{text-align:left}
+#escritorio .team h3{font-size:27px}
+}
