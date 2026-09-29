@@ -111,3 +111,22 @@ html{scroll-padding-top:94px}
 #escritorio .person-card:nth-child(even) .person-content{text-align:left}
 #escritorio .team h3{font-size:27px}
 }
+
+/* Páginas institucionais e links legais do rodapé. */
+.footer-legal{display:flex;flex-wrap:wrap;gap:10px 28px;padding:0 0 22px;font-size:14px}
+.footer-legal a{padding:5px 0;text-decoration:underline;text-underline-offset:4px}
+.footer-legal a:hover,.footer-legal a[aria-current="page"]{color:#b6c8e9}
+.legal-page{padding:48px 0 80px}
+.legal-wrap{max-width:860px}
+.legal-back{display:inline-block;color:var(--dark);font-weight:600;padding:8px 0;margin-bottom:32px}
+.legal-back:hover{text-decoration:underline;text-underline-offset:4px}
+.legal-heading{padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:36px}
+.legal-heading h1{font-size:clamp(36px,4.5vw,54px);letter-spacing:-1px;overflow-wrap:anywhere}
+.legal-intro{margin-top:20px;font-size:19px}
+.legal-date{margin-top:16px;font-size:14px}
+.legal-content section+section{margin-top:32px}
+.legal-content h2{font-size:26px;letter-spacing:-.3px;margin-bottom:16px;line-height:1.3}
+.legal-content p+p{margin-top:14px}
+.legal-content a{color:#405c93;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.legal-content a:hover{color:var(--dark)}
+@media(max-width:760px){.legal-page{padding:24px 0 52px}.legal-back{margin-bottom:24px}.legal-heading{margin-bottom:28px;padding-bottom:26px}.legal-intro{font-size:17px}.legal-content h2{font-size:24px}.footer-legal{gap:8px 22px}}
