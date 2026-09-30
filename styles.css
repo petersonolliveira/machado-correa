@@ -130,3 +130,7 @@ html{scroll-padding-top:94px}
 .legal-content a{color:#405c93;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 .legal-content a:hover{color:var(--dark)}
 @media(max-width:760px){.legal-page{padding:24px 0 52px}.legal-back{margin-bottom:24px}.legal-heading{margin-bottom:28px;padding-bottom:26px}.legal-intro{font-size:17px}.legal-content h2{font-size:24px}.footer-legal{gap:8px 22px}}
+
+/* Dois destaques após a retirada da data de início profissional. */
+.credentials .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:760px){.credentials .wrap{grid-template-columns:1fr}}
